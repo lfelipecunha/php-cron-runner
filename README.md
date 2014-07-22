@@ -6,6 +6,7 @@ Este é um framework para auxílio de execução de rotinas em php.
 ## Exemplo de utilização:
 
 <pre>
+// src/Crons/TesteCron.php
 namespace Crons;
 
 use \CronRunner\Cron\CronAbstract;
