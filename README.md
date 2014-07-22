@@ -110,3 +110,11 @@ Para que a trava seja habilitada, basta sobreescrever o método <code>isLocked</
     }
 ...
 </pre>
+
+## Utilizacao sem pré-definições
+Caso você queira não utilizar as predefinições de <code>CronAbstract</code>, você pode criar suas próprias classes de execução, desde que elas sigam as seguintes regras:
+
+1.  Estar no namespace Crons.
+2.  Utilizar o Sufixo "Cron" no nome da tarefa
+3.  Implementar a interace \CronRunner\Cron\CronInterface
+4.  Estar no diretório <code>src/Crons</code> ou fazer require manual do arquivo
