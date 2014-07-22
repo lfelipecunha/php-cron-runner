@@ -36,7 +36,7 @@ São argumentos que tem valor booleando (true ou false).
 
 <pre>
 ...
-    public function init() {
+    protected function _init() {
         $this->_getArgs()->setFlag(array('teste'));
     }
 ...
@@ -64,7 +64,7 @@ São argumentos que tem valor passado por linha de comando
 
 <pre>
 ...
-    public function init() {
+    protected function _init() {
         $this->_getArgs()->setValued(array('teste'));
     }
 ...
@@ -87,7 +87,7 @@ Na chamada da rotina faremos da seguinte forma:
 ### Definição de argumentos obrigatórios
 <pre>
 ...
-    public function init() {
+    protected function _init() {
         $this->_getArgs()->setRequired(array('teste'));
     }
 ...
@@ -112,7 +112,7 @@ Para que a trava seja habilitada, basta sobreescrever o método <code>isLocked</
 ...
 </pre>
 
-## Utilizacao sem pré-definições
+## Utilizacão sem pré-definições
 Caso você queira não utilizar as predefinições de <code>CronAbstract</code>, você pode criar suas próprias classes de execução, desde que elas sigam as seguintes regras:
 
 1.  Estar no namespace Crons.
