@@ -2,6 +2,11 @@
 
 Este é um framework para auxílio de execução de rotinas em php.
 
+## Instalação
+
+* Baixe o composer através do site: https://getcomposer.org/download/
+* Dentro do diretório raiz execute: <code>php composer.phar install</code>
+
 
 ## Exemplo de utilização:
 
